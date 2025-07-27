@@ -1,0 +1,69 @@
+// Initialize the package.json file
+npm init --y
+
+// Install the packages needed for tailwind
+npm install -D tailwindcss@3 postcss-cli autoprefixer
+
+// Add Tailwind to your PostCSS configuration
+Add tailwindcss and autoprefixer to your postcss.config.js file, or wherever PostCSS is configured in your project.
+
+postcss.config.js
+
+module.exports = {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  }
+}
+
+
++------------------------------------+
+| Configure your template paths
++------------------------------------+
+
+Add the paths to all of your template files in your tailwind.config.js file.
+
+tailwind.config.js
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{html,js}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+
++------------------------------------+
+Add the Tailwind directives to your CSS
++------------------------------------+
+
+Add the @tailwind directives for each of Tailwind’s layers to your main CSS file.
+
+main.css
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
++------------------------------------+
+Build the .css file
++------------------------------------+
+
+Add this to the package.json file
+"scripts": {
+  "dev": "postcss ./src/css/tailwind.css -o ./public/build/tailwind.css --watch"
+},
+
+Run this command to build the file
+npm run dev
+
+Link the final .css file to the html file
+<link rel="stylesheet" href="build/tailwind.css">
+
+
++------------------------------------+
+
+

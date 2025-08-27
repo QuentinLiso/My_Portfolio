@@ -1,581 +1,660 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0070f3" />
+    <meta name="description" content="Frontend Developer Portfolio" />
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="theme-color" content="#0070f3">
-	<meta name="description" content="Frontend Developer Portfolio">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="tailwind.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    />
 
-	<link rel = "icon" href="assets/favicon.ico" type="image/x-icon" />
-	<link rel="stylesheet" href="tailwind.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
-	
-	<title>Quentin LISO Portfolio</title>
-</head>
+    <title>Quentin LISO Portfolio</title>
+  </head>
 
-<body class="font-sans text-gray-900 dark:text-white bg-white dark:bg-dark-background transition-colors duration-300">
-	<!-- Dark mode background gradients -->
-	<div class="fixed inset-0 -z-10 opacity-0 dark:opacity-100 transition-opacity duration-500 pointer-events-none">
-		<div class="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-secondary/10">
+  <body class="font-sans text-gray-900 dark:text-white bg-white dark:bg-dark-background transition-colors duration-300">
+    <!-- Dark mode background gradients -->
+    <div class="fixed inset-0 -z-10 opacity-0 dark:opacity-100 transition-opacity duration-500 pointer-events-none">
+      <div class="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-secondary/10"></div>
+    </div>
 
-		</div>
-	</div>
-	 
-	<!-- Header -->
-	 <header class="fixed w-full top-0 z-50 bg-white/95 dark:bg-dark-background/95 backdrop-blur-sm shadow-sm transition-all duration-300">
-		<div class="container mx-auto px-4">
-			<nav class="flex justify-between items-center py-4">
-				<div class="flex items-center">
-					<span class="text-primary text-2xl ml-1">$</span>
-					<a href="#hero" class="text-xl font-extrabold ml-1">Quentin LISO</a>
-					<span class="text-primary text-2xl ml-1">></span>
-				</div>
-				<ul class="hidden md:flex space-x-8">
-					<li>
-						<a href="#hero" class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Home</a>
-					</li>
-					<li>
-						<a href="#skills" class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Skills</a>
-					</li>
-					<li>
-						<a href="#about" class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">About</a>
-					</li>
-					<li>
-						<a href="#projects" class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Projects</a>
-					</li>
-					<li>
-						<a href="#contact" class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Contact</a>
-					</li>
-				</ul>
-				<div class="flex items-center space-x-4">
-					<button id="themeToggle" class="">
-						<i class="fa-solid fa-moon text-gray-600 dark:text-gray-400"></i>
-					</button>
-					<button class="md:hidden p-2" id="menuToggle">
-						<div class="w-6 h-5 flex flex-col justify-between">
-							<span class="w-full h-0.5 bg-gray-600 dark:bg-gray-400 transition-all"></span>
-							<span class="w-full h-0.5 bg-gray-600 dark:bg-gray-400 transition-all"></span>
-							<span class="w-full h-0.5 bg-gray-600 dark:bg-gray-400 transition-all"></span>
-						</div>
-					</button>
-				</div>
-			</nav>
-		</div>
+    <!-- Header -->
+    <header class="fixed w-full top-0 z-50 bg-white/95 dark:bg-dark-background/95 backdrop-blur-sm shadow-sm transition-all duration-300">
+      <div class="container mx-auto px-4">
+        <nav class="flex justify-between items-center py-4">
+          <div class="flex items-center">
+            <span class="text-primary text-2xl ml-1">$</span>
+            <a href="#hero" class="text-xl font-extrabold ml-1">Quentin LISO</a>
+            <span class="text-primary text-2xl ml-1">></span>
+          </div>
+          <ul class="hidden md:flex space-x-8">
+            <li>
+              <a href="#hero" class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Home</a>
+            </li>
+            <li>
+              <a href="#skills" class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Skills</a>
+            </li>
+            <li>
+              <a href="#about" class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">About</a>
+            </li>
+            <li>
+              <a href="#projects" class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Projects</a>
+            </li>
+            <li>
+              <a href="#contact" class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Contact</a>
+            </li>
+          </ul>
+          <div class="flex items-center space-x-4">
+            <button id="themeToggle" class="">
+              <i class="fa-solid fa-moon text-gray-600 dark:text-gray-400"></i>
+            </button>
+            <button class="md:hidden p-2" id="menuToggle">
+              <div class="w-6 h-5 flex flex-col justify-between">
+                <span class="w-full h-0.5 bg-gray-600 dark:bg-gray-400 transition-all"></span>
+                <span class="w-full h-0.5 bg-gray-600 dark:bg-gray-400 transition-all"></span>
+                <span class="w-full h-0.5 bg-gray-600 dark:bg-gray-400 transition-all"></span>
+              </div>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
 
-	 </header>
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="fixed inset-0 bg-white dark:bg-dark-background z-50 transform translate-x-full transition-transform duration-300 md:hidden">
+      <div class="container mx-auto px-4 h-full flex flex-col">
+        <div class="flex justify-between items-center py-4">
+          <div class="flex items-center">
+            <span class="text-primary text-2xl ml-1">$</span>
+            <span class="text-xl font-extrabold">Quentin LISO</span>
+            <span class="text-primary text-2xl ml-1">></span>
+          </div>
+          <button id="closeMenu" class="p-2">
+            <i class="fa-solid fa-square-xmark text-gray-600 dark:text-gray-400 text-2xl"></i>
+          </button>
+        </div>
+        <ul class="flex-1 flex flex-col justify-center items-center space-y-8">
+          <li>
+            <a href="#hero" class="text-2xl text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Home</a>
+          </li>
+          <li>
+            <a href="#skills" class="text-2xl text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Skills</a>
+          </li>
+          <li>
+            <a href="#about" class="text-2xl text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">About</a>
+          </li>
+          <li>
+            <a href="#projects" class="text-2xl text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Projects</a>
+          </li>
+          <li>
+            <a href="#contact" class="text-2xl text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-	 <!-- Mobile Menu -->
-	  <div id="mobileMenu" class="fixed inset-0 bg-white dark:bg-dark-background z-50 transform translate-x-full transition-transform duration-300 md:hidden">
-		<div class="container mx-auto px-4 h-full flex flex-col">
-			<div class="flex justify-between items-center py-4">
-				<div class="flex items-center">
-					<span class="text-primary text-2xl ml-1">$</span>
-					<span class="text-xl font-extrabold">Quentin LISO</span>
-					<span class="text-primary text-2xl ml-1">></span>
-				</div>
-				<button id="closeMenu" class="p-2">
-					<i class="fa-solid fa-square-xmark text-gray-600 dark:text-gray-400 text-2xl"></i>
-				</button>
-			</div> 
-			<ul class="flex-1 flex flex-col justify-center items-center space-y-8">
-				<li>
-					<a href="#hero" class="text-2xl text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Home</a>
-				</li>
-				<li>
-					<a href="#skills" class="text-2xl text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Skills</a>
-				</li>
-				<li>
-					<a href="#about" class="text-2xl text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">About</a>
-				</li>
-				<li>
-					<a href="#projects" class="text-2xl text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Projects</a>
-				</li>
-				<li>
-					<a href="#contact" class="text-2xl text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Contact</a>
-				</li>
-			</ul>
-		</div>
-	  </div>
+    <!-- Hero Section -->
+    <section id="hero" class="min-h-screen flex items-center pt-20 pb-16 relative overflow-hidden">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center">
+          <h1 class="text-4xl md:text-6xl font-bold mb-6">Junior <span class="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">Full-Stack Web Developer</span></h1>
+          <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-8">Building <strong>fast, efficient, and rock-solid</strong> code—one line at a time.</p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+            <a
+              href="#projects"
+              class="px-8 py-3 bg-primary text-white rounded-lg shadow-lg hover:bg-blue-600 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-blue-300/30 dark:hover:shadow-blue-500/20 shadow-blue-200/20 dark:shadow-blue-700/10"
+            >
+              View Projects
+            </a>
+            <a
+              href="#about"
+              class="px-8 py-3 bg-white dark:bg-dark-background-secondary text-gray-900 dark:text-white border border-gray-200 dark:border-gray-700 rounded-lg hover:border-gray-900 dark:hover:border-white transition-colors"
+            >
+              Learn More
+            </a>
+          </div>
 
-	 <!-- Hero Section -->
-	 <section id="hero" class="min-h-screen flex items-center pt-20 pb-16 relative overflow-hidden">
-		<div class="container mx-auto px-4">
-			<div class="max-w-4xl mx-auto text-center">
-				<h1 class="text-4xl md:text-6xl font-bold mb-6">
-					Junior <span class="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">C && C++ Developer</span>
-				</h1>
-				<p class="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-8">
-					Building <strong>fast, efficient, and rock-solid</strong> code—one line at a time.
-				</p>
-				<div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-					<a href="#projects" class="px-8 py-3 bg-primary text-white rounded-lg shadow-lg hover:bg-blue-600 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-blue-300/30 dark:hover:shadow-blue-500/20 shadow-blue-200/20 dark:shadow-blue-700/10">
-						View Projects
-					</a>
-					<a href="#about" class="px-8 py-3 bg-white dark:bg-dark-background-secondary text-gray-900 dark:text-white border border-gray-200 dark:border-gray-700 rounded-lg hover:border-gray-900 dark:hover:border-white transition-colors">
-						Learn More
-					</a>
-				</div>
+          <div class="bg-gray-100 dark:bg-dark-background-secondary rounded-lg overflow-hidden shadow-lg max-w-2xl mx-auto" id="terminal-container">
+            <div class="flex items-center space-x-2 p-3 bg-gray-200 dark:bg-dark-background-tertiary">
+              <span class="w-3 h-3 rounded-full bg-red-500"></span>
+              <span class="w-3 h-3 rounded-full bg-yellow-500"></span>
+              <span class="w-3 h-3 rounded-full bg-green-500"></span>
+            </div>
+            <div class="p-6 font-mono terminal-content text-left">
+              <span class="text-green-500">$ ></span> <span class="command-text text-gray-900 dark:text-white"></span>
+              <p class="command-output text-gray-900 dark:text-white"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#skills" class="absolute bottom-0 z-100 h-20 w-[100%] flex justify-center items-end pb-2 text-4xl text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary">
+        <i class="fa-solid fa-arrow-down"></i>
+      </a>
+    </section>
 
-				<div class="bg-gray-100 dark:bg-dark-background-secondary rounded-lg overflow-hidden shadow-lg max-w-2xl mx-auto" id="terminal-container">
-					<div class="flex items-center space-x-2 p-3 bg-gray-200 dark:bg-dark-background-tertiary">
-						<span class="w-3 h-3 rounded-full bg-red-500"></span>
-						<span class="w-3 h-3 rounded-full bg-yellow-500"></span>
-						<span class="w-3 h-3 rounded-full bg-green-500"></span>
-					</div>
-					<div class="p-6 font-mono terminal-content text-left">
-						<span class="text-green-500">$ ></span> <span class="command-text text-gray-900 dark:text-white"></span>
-						<p class="command-output text-gray-900 dark:text-white"></p>
-					</div>
-				</div>
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 bg-gray-50 dark:bg-dark-background-secondary translate-y-4 transition-all duration-500 opacity-0">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">My Skills</h2>
+        <p class="text-xl text-gray-600 dark:text-gray-400 text-center mb-16">Technologies and tools I use to bring products to life</p>
+        <div class="">
+          <p class="text-xl font-bold text-gray-600 dark:text-gray-400 text-center mb-6">Web Stack</p>
+          <!-- Skills Web  -->
+          <div class="mb-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <!-- Skill Card Web 0 -->
+              <div class="bg-white dark:bg-dark-background px-8 py-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-900 transition-all duration-300 transform hover:-translate-y-1">
+                <div class="flex items-center space-x-12">
+                  <img src="assets/Typescript_logo.png" alt="C Language logo" class="w-% h-16" />
+                  <h3 class="text-xl font-bold">TypeScript</h3>
+                </div>
+              </div>
 
-			</div>
-		</div>
-		<a href="#skills" class="absolute bottom-0 z-100 h-20 w-[100%] flex justify-center items-end pb-2 text-4xl text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary ">
-			<i class="fa-solid fa-arrow-down"></i>
-		</a>
-	 </section>
+              <!-- Skill Card Web 1 -->
+              <div class="bg-white dark:bg-dark-background px-8 py-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-900 transition-all duration-300 transform hover:-translate-y-1">
+                <div class="flex items-center space-x-12">
+                  <img src="assets/tailwindcss_logo.png" alt="C Language logo" class="w-% h-16" />
+                  <h3 class="text-xl font-bold">TailwindCSS</h3>
+                </div>
+              </div>
 
+              <!-- Skill Card Web 2 -->
+              <div class="bg-white dark:bg-dark-background px-8 py-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-900 transition-all duration-300 transform hover:-translate-y-1">
+                <div class="flex items-center space-x-12">
+                  <img src="assets/nodejs_logo.png" alt="C Language logo" class="w-% h-16" />
+                  <h3 class="text-xl font-bold">NodeJs</h3>
+                </div>
+              </div>
 
-	   <!-- Skills Section -->
-		<section id="skills" class="py-24 bg-gray-50 dark:bg-dark-background-secondary translate-y-4 transition-all duration-500 opacity-0">
-			<div class="container mx-auto px-4">
-				<h2 class="text-3xl md:text-4xl font-bold text-center mb-4">My Skills</h2>
-				<p class="text-xl text-gray-600 dark:text-gray-400 text-center mb-16">Technologies and tools I use to bring products to life</p>
-				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-					
-					<!-- Skill Card 1 -->
-					<div class="bg-white dark:bg-dark-background px-8 py-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-900 transition-all duration-300 transform hover:-translate-y-1">
-						<div class="flex items-center space-x-12">
-							<img src="assets/C_Programming_Language.svg" alt="C Language logo" class="w-16 h-16" />
-							<h3 class="text-xl font-bold">C</h3>
-						</div>
-					</div>
+              <!-- Skill Card Web 3 -->
+              <div class="bg-white dark:bg-dark-background px-8 py-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-900 transition-all duration-300 transform hover:-translate-y-1">
+                <div class="flex items-center space-x-12">
+                  <img src="assets/fastify_logo.svg" alt="C Language logo" class="w-% h-16" id="fastify-logo" />
+                  <h3 class="text-xl font-bold">Fastify</h3>
+                </div>
+              </div>
 
-					<!-- Skill Card 2 -->
-					<div class="bg-white dark:bg-dark-background px-8 py-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-900 transition-all duration-300 transform hover:-translate-y-1">
-						<div class="flex items-center space-x-12">
-							<img src="assets/C++_Programming_Language.svg" alt="C Language logo" class="w-16 h-16" />
-							<h3 class="text-xl font-bold">C++</h3>
-						</div>
-					</div>
+              <!-- Skill Card Web 4 -->
+              <div class="bg-white dark:bg-dark-background px-8 py-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-900 transition-all duration-300 transform hover:-translate-y-1">
+                <div class="flex items-center space-x-12">
+                  <img src="assets/sqlite_logo.svg" alt="C Language logo" class="w-%/home/qliso/Downloads/sqlite_logo.svg h-16" />
+                  <h3 class="text-xl font-bold">SQLite</h3>
+                </div>
+              </div>
+            </div>
+          </div>
 
-					<!-- Skill Card 3 -->
-					<div class="bg-white dark:bg-dark-background px-8 py-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-900 transition-all duration-300 transform hover:-translate-y-1">
-						<div class="flex items-center space-x-12">
-							<img src="assets/Cmake.svg" alt="C Language logo" class="w-16 h-16" />
-							<h3 class="text-xl font-bold">CMake</h3>
-						</div>
-					</div>
+          <!-- Skills Other programming languages -->
+          <div class="mb-12">
+            <p class="text-xl font-bold text-gray-600 dark:text-gray-400 text-center mb-6">Other programming languages</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <!-- Skill Card 0 -->
+              <div class="bg-white dark:bg-dark-background px-8 py-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-900 transition-all duration-300 transform hover:-translate-y-1">
+                <div class="flex items-center space-x-12">
+                  <img src="assets/C_Programming_Language.svg" alt="C Language logo" class="w-16 h-16" />
+                  <h3 class="text-xl font-bold">C</h3>
+                </div>
+              </div>
 
-					<!-- Skill Card 4 -->
-					<div class="bg-white dark:bg-dark-background px-8 py-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-900 transition-all duration-300 transform hover:-translate-y-1">
-						<div class="flex items-center space-x-12">
-							<img src="assets/Bash.svg" alt="C Language logo" class="w-16 h-16" />
-							<h3 class="text-xl font-bold">Unix / Bash</h3>
-						</div>
-					</div>
+              <!-- Skill Card 1 -->
+              <div class="bg-white dark:bg-dark-background px-8 py-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-900 transition-all duration-300 transform hover:-translate-y-1">
+                <div class="flex items-center space-x-12">
+                  <img src="assets/C++_Programming_Language.svg" alt="C Language logo" class="w-16 h-16" />
+                  <h3 class="text-xl font-bold">C++</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Skills Devops / Tools -->
+          <div class="">
+            <p class="text-xl font-bold text-gray-600 dark:text-gray-400 text-center mb-6">DevOps / Tools</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <!-- Skill Card 0 -->
+              <div class="bg-white dark:bg-dark-background px-8 py-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-900 transition-all duration-300 transform hover:-translate-y-1">
+                <div class="flex items-center space-x-12">
+                  <img src="assets/Bash.svg" alt="C Language logo" class="w-16 h-16" />
+                  <h3 class="text-xl font-bold">Unix / Bash</h3>
+                </div>
+              </div>
 
-					<!-- Skill Card 5 -->
-					<div class="bg-white dark:bg-dark-background px-8 py-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-900 transition-all duration-300 transform hover:-translate-y-1">
-						<div class="flex items-center space-x-12">
-							<img src="assets/Git.svg" alt="C Language logo" class="w-16 h-16" />
-							<h3 class="text-xl font-bold">Git</h3>
-						</div>
-					</div>
+              <!-- Skill Card 1 -->
+              <div class="bg-white dark:bg-dark-background px-8 py-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-900 transition-all duration-300 transform hover:-translate-y-1">
+                <div class="flex items-center space-x-12">
+                  <img src="assets/Git.svg" alt="C Language logo" class="w-16 h-16" />
+                  <h3 class="text-xl font-bold">Git</h3>
+                </div>
+              </div>
 
-					<!-- Skill Card 6 -->
-					<div class="bg-white dark:bg-dark-background px-8 py-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-900 transition-all duration-300 transform hover:-translate-y-1">
-						<div class="flex items-center space-x-12">
-							<img src="assets/docker-mark-blue.svg" alt="C Language logo" class="w-16 h-16" />
-							<h3 class="text-xl font-bold">Docker</h3>
-						</div>
-					</div>
-				</div>	
-			</div>
-		</section>
+              <!-- Skill Card 2 -->
+              <div class="bg-white dark:bg-dark-background px-8 py-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-900 transition-all duration-300 transform hover:-translate-y-1">
+                <div class="flex items-center space-x-12">
+                  <img src="assets/docker-mark-blue.svg" alt="C Language logo" class="w-16 h-16" />
+                  <h3 class="text-xl font-bold">Docker</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- About Section -->
+    <section id="about" class="py-24 translate-y-4 transition-all duration-500 opacity-0">
+      <div class="container mx-auto px-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div>
+            l
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">About Me</h2>
+            <p class="text-xl text-gray-600 dark:text-gray-400 mb-6">I am a Fullstack Web developer focused on crafting clean & user-friendly experiences.</p>
+            <div class="flex mb-8">
+              <div class="w-2 bg-gradient-to-b from-primary via-secondary to-accent"></div>
+              <ul class="pl-4">
+                <li class="mb-6">
+                  <div class="text-lg font-semibold bg-gradient-to-r from-primary to-primary w-36 bg-clip-text text-transparent">2024-2025</div>
+                  <p class="">Studying Computer Science @ <strong>42 School Paris</strong></p>
+                </li>
 
+                <li class="mb-6">
+                  <div class="text-lg font-semibold bg-gradient-to-r from-primary via-primary to-secondary w-36 bg-clip-text text-transparent">2024</div>
+                  <p class="">Accounting auditor @ <strong>EY</strong></p>
+                </li>
+                <li class="mb-6">
+                  <div class="text-lg font-semibold bg-gradient-to-r from-primary via-secondary to-secondary w-36 bg-clip-text text-transparent">2022-2023</div>
+                  <p class="">Digital Manager @ <strong>Alliance Conseil</strong></p>
+                </li>
+                <li class="mb-6">
+                  <p class="text-lg font-semibold bg-gradient-to-r from-secondary via-secondary to-accent w-36 bg-clip-text text-transparent">2022</p>
+                  <p class="">Ski Patrol <strong>@ Auron</strong> (French South Alps Ski Resort)</p>
+                </li>
+                <li class="mb-6">
+                  <div class="text-lg font-semibold bg-gradient-to-r from-secondary via-accent to-accent w-36 bg-clip-text text-transparent">2018-2021</div>
+                  <p class="">Accounting auditor @ <strong>Deloitte</strong></p>
+                </li>
+                <li class="mb-6">
+                  <div class="text-lg font-semibold bg-gradient-to-r from-accent to-accent w-36 bg-clip-text text-transparent">2018</div>
+                  <p class="">Graduated from <strong>HEC Paris</strong> Majored in Digital Management</p>
+                </li>
+              </ul>
+            </div>
 
-	 <!-- About Section -->
-	   <section id="about" class="py-24 translate-y-4 transition-all duration-500 opacity-0">
-			<div class="container mx-auto px-10">
-				<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-					<div>
-						<h2 class="text-3xl md:text-4xl font-bold mb-6">About Me</h2>
-						<p class="text-xl text-gray-600 dark:text-gray-400 mb-6">
-							I am a C/C++ developer focused on crafting clean & user-friendly experiences.
-						</p>
-						<div class="flex mb-8 ">
-							<div class="w-2 bg-gradient-to-b from-primary via-secondary to-accent">
-							</div>
-							<ul class="pl-4">
-								<li class="mb-6">
-									<div class="text-lg font-semibold bg-gradient-to-r from-primary to-primary w-36 bg-clip-text text-transparent">2024-2025</div>
-									<p class="">Studying Computer Science @ <strong>42 School Paris</strong></p>
-								</li>
-		
-								<li class="mb-6">
-									<div class="text-lg font-semibold bg-gradient-to-r from-primary via-primary to-secondary w-36 bg-clip-text text-transparent">2024</div>
-									<p class="">Accounting auditor @ <strong>EY</strong></p>
-								</li>
-								<li class="mb-6">
-									<div class="text-lg font-semibold bg-gradient-to-r from-primary via-secondary to-secondary w-36 bg-clip-text text-transparent">2022-2023</div>
-									<p class="">Digital Manager @ <strong>Alliance Conseil</strong></p>
-								</li>
-								<li class="mb-6">
-									<p class="text-lg font-semibold bg-gradient-to-r from-secondary via-secondary to-accent w-36 bg-clip-text text-transparent">2022</p>
-									<p class="">Ski Patrol <strong>@ Auron</strong> (French South Alps Ski Resort)</p>
-								</li>
-								<li class="mb-6">
-									<div class="text-lg font-semibold bg-gradient-to-r from-secondary via-accent to-accent w-36 bg-clip-text text-transparent">2018-2021</div>
-									<p class="">Accounting auditor @ <strong>Deloitte</strong></p>
-								</li>
-								<li class="mb-6">
-									<div class="text-lg font-semibold bg-gradient-to-r from-accent to-accent w-36 bg-clip-text text-transparent">2018</div>
-									<p class="">Graduated from <strong>HEC Paris</strong> Majored in Digital Management</p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a
+                href="#contact"
+                class="px-8 py-3 bg-primary text-white rounded-lg shadow-lg hover:bg-blue-600 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-blue-300/30 dark:hover:shadow-blue-500/20 shadow-blue-200/20 dark:shadow-blue-700/10 text-center"
+                >Contact Me</a
+              >
+              <a
+                id="cv-download"
+                href="assets/CV LISO Quentin.pdf"
+                download
+                class="px-8 py-3 bg-white dark:bg-dark-background-secondary text-gray-900 dark:text-white border border-gray-200 dark:border-gray-700 rounded-lg hover:border-gray-900 dark:hover:border-white transition-colors text-center"
+                >Download Resume / CV</a
+              >
+            </div>
+          </div>
 
-								</li>
-							</ul>
-						</div>
+          <div class="relative">
+            <div class="w-72 h-72 mx-auto animate-morph bg-gradient-to-br from-primary via-secondary to-accent rounded-full relative overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-br from-primary/50 via-secondary/50 to-accent/50 rounded-full blur-2xl animate-morph"></div>
+              <img src="assets/about_profile_picture.jpeg" alt="Profile Photo" class="absolute inset-0 w-full h-full object-cover z-10" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 bg-gray-50 dark:bg-dark-background-secondary translate-y-4 transition-all duration-500 opacity-0">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Featured Projects</h2>
+        <p class="text-xl text-gray-600 dark:text-gray-400 text-center mb-16">Major educational coding projects made over the past year</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project Card 0 -->
+          <div class="bg-white dark:bg-dark-background rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+            <div class="h-48 relative bg-gradient-to-r from-primary via-secondary to-accent flex justify-center">
+              <img src="assets/transcendance_logo.png" alt="Transcendance Logo" class="object-cover" />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-4 h-12">Transcendance (pending)</h3>
+              <div class="flex flex-col">
+                <p class="text-gray-600 dark:text-gray-400 mb-4 h-28">A full-stack Pong website. Players can securely register, login and play with their friends online.</p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">TypeScript</span>
+                  <span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">TailwindCSS</span>
+                  <span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">Node JS</span>
+                  <span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">Fastify</span>
+                  <span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">SQLite</span>
+                </div>
+                <div class="flex gap-4">
+                  <a href="https://github.com/QuentinLiso/QL16_Transcendance" target="_blank" class="px-4 py-2 bg-primary text-white rounded-lg hover:bg-blue-600 transition-colors"
+                    ><i class="fa-brands fa-github mr-2"></i>Code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
 
-						<div class="flex flex-col sm:flex-row gap-4">
-							<a href="#contact" class="px-8 py-3 bg-primary text-white rounded-lg shadow-lg hover:bg-blue-600 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-blue-300/30 dark:hover:shadow-blue-500/20 shadow-blue-200/20 dark:shadow-blue-700/10 text-center">Contact Me</a>
-							<a id="cv-download" href="assets/CV LISO Quentin.pdf" download class="px-8 py-3 bg-white dark:bg-dark-background-secondary text-gray-900 dark:text-white border border-gray-200 dark:border-gray-700 rounded-lg hover:border-gray-900 dark:hover:border-white transition-colors text-center">Download Resume / CV</a>
-						</div>
-					</div>
+          <!-- Project Card 1 -->
+          <div class="bg-white dark:bg-dark-background rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+            <div class="h-48 relative bg-gradient-to-r from-primary via-secondary to-accent flex justify-center">
+              <img src="assets/webserv_logo.png" alt="Webserv Http Logo" class="object-cover" />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-4 h-12">HTTP Web Server</h3>
+              <div class="flex flex-col">
+                <p class="text-gray-600 dark:text-gray-400 mb-4 h-28">
+                  An nginx-like web server written in C++. It sets a listening interface, parses incoming requests and sends the appropriate response to the client
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">C++</span>
+                  <span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">C</span>
+                  <span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">UNIX</span>
+                </div>
+                <div class="flex gap-4">
+                  <a href="https://github.com/QuentinLiso/Cursus42_QL15_Webserv" target="_blank" class="px-4 py-2 bg-primary text-white rounded-lg hover:bg-blue-600 transition-colors"
+                    ><i class="fa-brands fa-github mr-2"></i>Code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
 
-					<div class="relative">
-						<div class="w-72 h-72 mx-auto animate-morph bg-gradient-to-br from-primary via-secondary to-accent rounded-full relative overflow-hidden">
-							<div class="absolute inset-0 bg-gradient-to-br from-primary/50 via-secondary/50 to-accent/50 rounded-full blur-2xl animate-morph "></div>
-							<img src="assets/about_profile_picture.jpeg" alt="Profile Photo" class="absolute inset-0 w-full h-full object-cover z-10" />
-						</div>
-					</div>
-				</div>
-			</div>
-	   </section>
+          <!-- Project Card 2 -->
+          <div class="bg-white dark:bg-dark-background rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+            <div class="h-48 relative bg-gradient-to-r from-primary via-secondary to-accent flex justify-center">
+              <img src="assets/inception_logo.png" alt="Webserv Http Logo" class="object-cover" />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-4 h-12">Docker environment</h3>
+              <div class="flex flex-col">
+                <p class="text-gray-600 dark:text-gray-400 mb-4 h-28">A docker infrastructure running 6 containers for 6 services: Wordpress, Nginx, MariaDB, vsFTPd, Redis & Adminer</p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">Docker</span>
+                  <span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">Wordpress</span>
+                  <span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">Nginx</span>
+                </div>
+                <div class="flex gap-4">
+                  <a href="https://github.com/QuentinLiso/Cursus42_QL14_Inception" target="_blank" class="px-4 py-2 bg-primary text-white rounded-lg hover:bg-blue-600 transition-colors"
+                    ><i class="fa-brands fa-github mr-2"></i>Code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
 
-	   <!-- Projects Section -->
-		 <section id="projects" class="py-24  bg-gray-50 dark:bg-dark-background-secondary translate-y-4 transition-all duration-500 opacity-0">
-			<div class="container mx-auto px-4">
-				<h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Featured Projects</h2>
-				<p class="text-xl text-gray-600 dark:text-gray-400 text-center mb-16">Major educational coding projects made over the past year</p>
-				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project Card 3 -->
+          <div class="bg-white dark:bg-dark-background rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+            <div class="h-48 relative bg-gradient-to-r from-primary via-secondary to-accent flex justify-center">
+              <img src="assets/cub3d_logo.png" alt="Webserv Http Logo" class="object-cover" />
+              <!-- <div class="absolute inset-0 bg-blue-950"></div> -->
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-4 h-12">3D-Raycast Game</h3>
+              <div class="flex flex-col">
+                <p class="text-gray-600 dark:text-gray-400 mb-4 h-28">A raw Doom-like game where the 2D-grid map turns into a 3D world using raycasting.</p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">C</span>
+                  <span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">Linear Algebra</span>
+                  <span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">Graphics</span>
+                </div>
+                <div class="flex gap-4">
+                  <a href="https://github.com/QuentinLiso/Cursus42_QL12_cub3d" target="_blank" class="px-4 py-2 bg-primary text-white rounded-lg hover:bg-blue-600 transition-colors"
+                    ><i class="fa-brands fa-github mr-2"></i>Code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
 
-					<!-- Project Card 0 -->
-					 <div class="bg-white dark:bg-dark-background rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-						<div class="h-48 relative bg-gradient-to-r from-primary via-secondary to-accent flex justify-center">
-							<img src="assets/transcendance_logo.png" alt="Transcendance Logo" class="object-cover">
-						</div>
-						<div class="p-6">
-							<h3 class="text-xl font-bold mb-4 h-12">Transcendance (pending)</h3>
-							<div class="flex flex-col">
-								<p class="text-gray-600 dark:text-gray-400 mb-4 h-28">A full-stack Pong website. Players can securely register, login and play with their friends online.</p>
-								<div class="flex flex-wrap gap-2 mb-4">
-									<span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">TypeScript</span>
-									<span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">TailwindCSS</span>
-									<span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">Node JS</span>
-									<span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">Fastify</span>
-									<span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">SQLite</span>
-								</div>
-								<div class="flex gap-4">
-									<a href="https://github.com/QuentinLiso/QL16_Transcendance" target="_blank" class="px-4 py-2 bg-primary text-white rounded-lg hover:bg-blue-600 transition-colors"><i class="fa-brands fa-github mr-2"></i>Code</a>
-								</div>
-							</div>
-						</div>
-					 </div>
-					
-					<!-- Project Card 1 -->
-					 <div class="bg-white dark:bg-dark-background rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-						<div class="h-48 relative bg-gradient-to-r from-primary via-secondary to-accent flex justify-center">
-							<img src="assets/webserv_logo.png" alt="Webserv Http Logo" class="object-cover">
-						</div>
-						<div class="p-6">
-							<h3 class="text-xl font-bold mb-4 h-12">HTTP Web Server</h3>
-							<div class="flex flex-col">
-								<p class="text-gray-600 dark:text-gray-400 mb-4 h-28">An nginx-like web server written in C++. It sets a listening interface, parses incoming requests and sends the appropriate response to the client</p>
-								<div class="flex flex-wrap gap-2 mb-4">
-									<span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">C++</span>
-									<span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">C</span>
-									<span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">UNIX</span>
-								</div>
-								<div class="flex gap-4">
-									<a href="https://github.com/QuentinLiso/Cursus42_QL15_Webserv" target="_blank" class="px-4 py-2 bg-primary text-white rounded-lg hover:bg-blue-600 transition-colors"><i class="fa-brands fa-github mr-2"></i>Code</a>
-								</div>
-							</div>
-						</div>
-					 </div>
+          <!-- Project Card 4 -->
+          <div class="bg-white dark:bg-dark-background rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+            <div class="h-48 relative bg-gradient-to-r from-primary via-secondary to-accent flex justify-center">
+              <img src="assets/cpp_logo.png" alt="Webserv Http Logo" class="object-cover" />
+              <!-- <div class="absolute inset-0 bg-blue-950"></div> -->
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-4 h-12">Intensive C++ Bootcamp</h3>
+              <div class="flex flex-col">
+                <p class="text-gray-600 dark:text-gray-400 mb-4 h-28">Over 40 small projects to master core C++ concepts : I/O, Classes, Templates, STL libraries, Containers and so on.</p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">C++</span>
+                </div>
+                <div class="flex gap-4">
+                  <a href="https://github.com/QuentinLiso/Cursus42_QL11_CPP00" target="_blank" class="px-4 py-2 bg-primary text-white rounded-lg hover:bg-blue-600 transition-colors"
+                    ><i class="fa-brands fa-github mr-2"></i>Code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
 
-					<!-- Project Card 2 -->
-					 <div class="bg-white dark:bg-dark-background rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-						<div class="h-48 relative bg-gradient-to-r from-primary via-secondary to-accent flex justify-center">
-							<img src="assets/inception_logo.png" alt="Webserv Http Logo" class="object-cover">
-						</div>
-						<div class="p-6">
-							<h3 class="text-xl font-bold mb-4 h-12">Docker environment</h3>
-							<div class="flex flex-col">
-								<p class="text-gray-600 dark:text-gray-400 mb-4 h-28">A docker infrastructure running 6 containers for 6 services: Wordpress, Nginx, MariaDB, vsFTPd, Redis & Adminer</p>
-								<div class="flex flex-wrap gap-2 mb-4">
-									<span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">Docker</span>
-									<span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">Wordpress</span>
-									<span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">Nginx</span>
-								</div>
-								<div class="flex gap-4">
-									<a href="https://github.com/QuentinLiso/Cursus42_QL14_Inception" target="_blank" class="px-4 py-2 bg-primary text-white rounded-lg hover:bg-blue-600 transition-colors"><i class="fa-brands fa-github mr-2"></i>Code</a>
-								</div>
-							</div>
-						</div>
-					 </div>
+          <!-- Project Card 5 -->
+          <div class="bg-white dark:bg-dark-background rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+            <div class="h-48 relative bg-gradient-to-r from-primary via-secondary to-accent flex justify-center">
+              <img src="assets/netpractice_logo.png" alt="Webserv Http Logo" class="object-cover" />
+              <!-- <div class="absolute inset-0 bg-blue-950"></div> -->
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-4 h-12">Network Administration Practice</h3>
+              <div class="flex flex-col">
+                <p class="text-gray-600 dark:text-gray-400 mb-4 h-28">
+                  9 fun exercices to master Network Administration principles: IP addresses, Mask addresses, Subnets, Private networks and Routing
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">Network Administration</span>
+                </div>
+                <div class="flex gap-4">
+                  <div class="px-4 py-2 bg-gray-500 text-white rounded-lg transition-colors"><i class="fa-brands fa-github mr-2"></i>Code</div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-					<!-- Project Card 3 -->
-					 <div class="bg-white dark:bg-dark-background rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-						<div class="h-48 relative bg-gradient-to-r from-primary via-secondary to-accent flex justify-center">
-							<img src="assets/cub3d_logo.png" alt="Webserv Http Logo" class="object-cover">
-							<!-- <div class="absolute inset-0 bg-blue-950"></div> -->
-						</div>
-						<div class="p-6">
-							<h3 class="text-xl font-bold mb-4 h-12">3D-Raycast Game</h3>
-							<div class="flex flex-col">
-								<p class="text-gray-600 dark:text-gray-400 mb-4 h-28">A raw Doom-like game where the 2D-grid map turns into a 3D world using raycasting. </p>
-								<div class="flex flex-wrap gap-2 mb-4">
-									<span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">C</span>
-									<span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">Linear Algebra</span>
-									<span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">Graphics</span>
-								</div>
-								<div class="flex gap-4">
-									<a href="https://github.com/QuentinLiso/Cursus42_QL12_cub3d" target="_blank" class="px-4 py-2 bg-primary text-white rounded-lg hover:bg-blue-600 transition-colors"><i class="fa-brands fa-github mr-2"></i>Code</a>
-								</div>
-							</div>
-						</div>
-					 </div>
+          <!-- Project Card 6 -->
+          <div class="bg-white dark:bg-dark-background rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+            <div class="h-48 relative bg-gradient-to-r from-primary via-secondary to-accent flex justify-center">
+              <img src="assets/minishell_logo.png" alt="Webserv Http Logo" class="object-cover" />
+              <!-- <div class="absolute inset-0 bg-blue-950"></div> -->
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-4 h-12">Minishell</h3>
+              <div class="flex flex-col">
+                <p class="text-gray-600 dark:text-gray-400 mb-4 h-28">
+                  A bash-like shell: handles mutiple user inputs and signals, output with UNIX syscalls (pipe, fork, dup) and a rigorous error-handling
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">C</span>
+                  <span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">UNIX</span>
+                </div>
+                <div class="flex gap-4">
+                  <a href="https://github.com/QuentinLiso/Cursus42_QL09_Minishell" target="_blank" class="px-4 py-2 bg-primary text-white rounded-lg hover:bg-blue-600 transition-colors"
+                    ><i class="fa-brands fa-github mr-2"></i>Code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
 
-					<!-- Project Card 4 -->
-					 <div class="bg-white dark:bg-dark-background rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-						<div class="h-48 relative bg-gradient-to-r from-primary via-secondary to-accent flex justify-center">
-							<img src="assets/cpp_logo.png" alt="Webserv Http Logo" class="object-cover">
-							<!-- <div class="absolute inset-0 bg-blue-950"></div> -->
-						</div>
-						<div class="p-6">
-							<h3 class="text-xl font-bold mb-4 h-12">Intensive C++ Bootcamp</h3>
-							<div class="flex flex-col">
-								<p class="text-gray-600 dark:text-gray-400 mb-4 h-28">Over 40 small projects to master core C++ concepts : I/O, Classes, Templates, STL libraries, Containers and so on.</p>
-								<div class="flex flex-wrap gap-2 mb-4">
-									<span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">C++</span>
-								</div>
-								<div class="flex gap-4">
-									<a href="https://github.com/QuentinLiso/Cursus42_QL11_CPP00" target="_blank" class="px-4 py-2 bg-primary text-white rounded-lg hover:bg-blue-600 transition-colors"><i class="fa-brands fa-github mr-2"></i>Code</a>
-								</div>
-							</div>
-						</div>
-					 </div>
+          <!-- Project Card 7 -->
+          <div class="bg-white dark:bg-dark-background rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+            <div class="h-48 relative bg-gradient-to-r from-primary via-secondary to-accent flex justify-center">
+              <img src="assets/philosophers_logo.png" alt="Webserv Http Logo" class="object-cover" />
+              <!-- <div class="absolute inset-0 bg-blue-950"></div> -->
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-4 h-12">Philosophers</h3>
+              <div class="flex flex-col">
+                <p class="text-gray-600 dark:text-gray-400 mb-4 h-28">
+                  Solving a classic algorithm problem, <a href="https://en.wikipedia.org/wiki/Dining_philosophers_problem" class="italic">the dining philosophers</a>, with multi-threading
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">C</span>
+                  <span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">Algorithms</span>
+                  <span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">UNIX</span>
+                </div>
+                <div class="flex gap-4">
+                  <a href="https://github.com/QuentinLiso/Cursus42_QL08_Philosophers" target="_blank" class="px-4 py-2 bg-primary text-white rounded-lg hover:bg-blue-600 transition-colors"
+                    ><i class="fa-brands fa-github mr-2"></i>Code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
 
-					<!-- Project Card 5 -->
-					 <div class="bg-white dark:bg-dark-background rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-						<div class="h-48 relative bg-gradient-to-r from-primary via-secondary to-accent flex justify-center">
-							<img src="assets/netpractice_logo.png" alt="Webserv Http Logo" class="object-cover">
-							<!-- <div class="absolute inset-0 bg-blue-950"></div> -->
-						</div>
-						<div class="p-6">
-							<h3 class="text-xl font-bold mb-4 h-12">Network Administration Practice</h3>
-							<div class="flex flex-col">
-								<p class="text-gray-600 dark:text-gray-400 mb-4 h-28">9 fun exercices to master Network Administration principles: IP addresses, Mask addresses, Subnets, Private networks and Routing</p>
-								<div class="flex flex-wrap gap-2 mb-4">
-									<span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">Network Administration</span>
-								</div>
-								<div class="flex gap-4">
-									<div class="px-4 py-2 bg-gray-500 text-white rounded-lg transition-colors"><i class="fa-brands fa-github mr-2"></i>Code</div>
-								</div>
-							</div>
-						</div>
-					 </div>
+          <!-- Project Card 8 -->
+          <div class="bg-white dark:bg-dark-background rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+            <div class="h-48 relative bg-gradient-to-r from-primary via-secondary to-accent flex justify-center">
+              <img src="assets/fdf_logo.png" alt="Webserv Http Logo" class="object-cover" />
+              <!-- <div class="absolute inset-0 bg-blue-950"></div> -->
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-4 h-12">3D-Mesh application</h3>
+              <div class="flex flex-col">
+                <p class="text-gray-600 dark:text-gray-400 mb-4 h-28">A grid map builder which turns a 2D square grid into a colored 3D-projection</p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">C</span>
+                  <span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">Linear Algebra</span>
+                  <span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">Graphics</span>
+                </div>
+                <div class="flex gap-4">
+                  <a href="https://github.com/QuentinLiso/Cursus42_QL07_fdf" target="_blank" class="px-4 py-2 bg-primary text-white rounded-lg hover:bg-blue-600 transition-colors"
+                    ><i class="fa-brands fa-github mr-2"></i>Code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
 
-					<!-- Project Card 6 -->
-					 <div class="bg-white dark:bg-dark-background rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-						<div class="h-48 relative bg-gradient-to-r from-primary via-secondary to-accent flex justify-center">
-							<img src="assets/minishell_logo.png" alt="Webserv Http Logo" class="object-cover">
-							<!-- <div class="absolute inset-0 bg-blue-950"></div> -->
-						</div>
-						<div class="p-6">
-							<h3 class="text-xl font-bold mb-4 h-12">Minishell</h3>
-							<div class="flex flex-col">
-								<p class="text-gray-600 dark:text-gray-400 mb-4 h-28">A bash-like shell: handles mutiple user inputs and signals, output with UNIX syscalls (pipe, fork, dup) and a rigorous error-handling</p>
-								<div class="flex flex-wrap gap-2 mb-4">
-									<span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">C</span>
-									<span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">UNIX</span>
-								</div>
-								<div class="flex gap-4">
-									<a href="https://github.com/QuentinLiso/Cursus42_QL09_Minishell" target="_blank" class="px-4 py-2 bg-primary text-white rounded-lg hover:bg-blue-600 transition-colors"><i class="fa-brands fa-github mr-2"></i>Code</a>
-								</div>
-							</div>
-						</div>
-					 </div>
+          <!-- Project Card 9 -->
+          <div class="bg-white dark:bg-dark-background rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+            <div class="h-48 relative bg-gradient-to-r from-primary via-secondary to-accent flex justify-center">
+              <img src="assets/minitalk_logo.png" alt="Webserv Http Logo" class="object-cover" />
+              <!-- <div class="absolute inset-0 bg-blue-950"></div> -->
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-4 h-12">Minitalk</h3>
+              <div class="flex flex-col">
+                <p class="text-gray-600 dark:text-gray-400 mb-4 h-28">A UNIX signals-based communication protocol between a client and a server</p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">C</span>
+                  <span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">UNIX</span>
+                </div>
+                <div class="flex gap-4">
+                  <a href="https://github.com/QuentinLiso/Cursus42_QL05_minitalk" target="_blank" class="px-4 py-2 bg-primary text-white rounded-lg hover:bg-blue-600 transition-colors"
+                    ><i class="fa-brands fa-github mr-2"></i>Code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-					<!-- Project Card 7 -->
-					 <div class="bg-white dark:bg-dark-background rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-						<div class="h-48 relative bg-gradient-to-r from-primary via-secondary to-accent flex justify-center">
-							<img src="assets/philosophers_logo.png" alt="Webserv Http Logo" class="object-cover">
-							<!-- <div class="absolute inset-0 bg-blue-950"></div> -->
-						</div>
-						<div class="p-6">
-							<h3 class="text-xl font-bold mb-4 h-12">Philosophers</h3>
-							<div class="flex flex-col">
-								<p class="text-gray-600 dark:text-gray-400 mb-4 h-28">Solving a classic algorithm problem, <a href="https://en.wikipedia.org/wiki/Dining_philosophers_problem" class="italic">the dining philosophers</a>, with multi-threading</p>
-								<div class="flex flex-wrap gap-2 mb-4">
-									<span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">C</span>
-									<span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">Algorithms</span>
-									<span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">UNIX</span>
-								</div>
-								<div class="flex gap-4">
-									<a href="https://github.com/QuentinLiso/Cursus42_QL08_Philosophers" target="_blank" class="px-4 py-2 bg-primary text-white rounded-lg hover:bg-blue-600 transition-colors"><i class="fa-brands fa-github mr-2"></i>Code</a>
-								</div>
-							</div>
-						</div>
-					 </div>
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 translate-y-4 transition-all duration-500 opacity-0">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Contact</h2>
+        <p class="text-xl text-gray-600 dark:text-gray-400 text-center mb-16">Interested in my profile? Let's work together!</p>
 
-					<!-- Project Card 8 -->
-					 <div class="bg-white dark:bg-dark-background rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-						<div class="h-48 relative bg-gradient-to-r from-primary via-secondary to-accent flex justify-center">
-							<img src="assets/fdf_logo.png" alt="Webserv Http Logo" class="object-cover">
-							<!-- <div class="absolute inset-0 bg-blue-950"></div> -->
-						</div>
-						<div class="p-6">
-							<h3 class="text-xl font-bold mb-4 h-12">3D-Mesh application</h3>
-							<div class="flex flex-col">
-								<p class="text-gray-600 dark:text-gray-400 mb-4 h-28">A grid map builder which turns a 2D square grid into a colored 3D-projection</p>
-								<div class="flex flex-wrap gap-2 mb-4">
-									<span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">C</span>
-									<span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">Linear Algebra</span>
-									<span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">Graphics</span>
-								</div>
-								<div class="flex gap-4">
-									<a href="https://github.com/QuentinLiso/Cursus42_QL07_fdf" target="_blank" class="px-4 py-2 bg-primary text-white rounded-lg hover:bg-blue-600 transition-colors"><i class="fa-brands fa-github mr-2"></i>Code</a>
-								</div>
-							</div>
-						</div>
-					 </div>
+        <!-- Contact Info -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Location -->
+          <div class="bg-white dark:bg-dark-background-secondary p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="fa-solid fa-map-location-dot text-primary text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Location</h3>
+            <p class="text-lg text-gray-600 dark:text-gray-400">Rennes, Brittany</p>
+          </div>
 
-					<!-- Project Card 9 -->
-					 <div class="bg-white dark:bg-dark-background rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-						<div class="h-48 relative bg-gradient-to-r from-primary via-secondary to-accent flex justify-center">
-							<img src="assets/minitalk_logo.png" alt="Webserv Http Logo" class="object-cover">
-							<!-- <div class="absolute inset-0 bg-blue-950"></div> -->
-						</div>
-						<div class="p-6">
-							<h3 class="text-xl font-bold mb-4 h-12">Minitalk</h3>
-							<div class="flex flex-col">
-								<p class="text-gray-600 dark:text-gray-400 mb-4 h-28">A UNIX signals-based communication protocol between a client and a server</p>
-								<div class="flex flex-wrap gap-2 mb-4">
-									<span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">C</span>
-									<span class="px-3 py-1 bg-gray-100 dark:bg-dark-background-secondary text-gray-600 dark:text-gray-400 rounded-full text-sm">UNIX</span>
-								</div>
-								<div class="flex gap-4">
-									<a href="https://github.com/QuentinLiso/Cursus42_QL05_minitalk" target="_blank" class="px-4 py-2 bg-primary text-white rounded-lg hover:bg-blue-600 transition-colors"><i class="fa-brands fa-github mr-2"></i>Code</a>
-								</div>
-							</div>
-						</div>
-					 </div>
+          <!-- Email -->
+          <a
+            href="mailto:quentin_liso@live.fr"
+            class="bg-white dark:bg-dark-background-secondary p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+          >
+            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="fa-solid fa-envelope text-primary text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Email</h3>
+            <p class="text-lg text-gray-600 dark:text-gray-400">quentin_liso@live.fr</p>
+          </a>
 
+          <!-- Socials -->
+          <div class="bg-white dark:bg-dark-background-secondary p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="fa-solid fa-globe text-primary text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Socials</h3>
+            <div class="flex justify-center space-x-4">
+              <a
+                href="https://github.com/QuentinLiso"
+                target="_blank"
+                class="w-10 h-10 text-2xl bg-gray-100 dark:bg-dark-background-secondary rounded-full flex items-center justify-center text-gray-600 hover:text-primary dark:hover:text-primary dark:text-gray-400 transition-all duration-300"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/quentin-liso/"
+                target="_blank"
+                class="w-10 h-10 text-2xl bg-gray-100 dark:bg-dark-background-secondary rounded-full flex items-center justify-center text-gray-600 hover:text-primary dark:hover:text-primary dark:text-gray-400 transition-all duration-300"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-				</div>
-			</div>
-		</section>
+    <!-- Footer -->
+    <footer class="bg-gray-50 dark:bg-dark-background-secondary py-12">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+          <div class="flex items-center mb-4 md:mb-0">
+            <span class="text-primary text-xl ml-1">$</span>
+            <a href="#hero" class="text-base font-extrabold ml-1">Quentin LISO</a>
+            <span class="text-primary text-xl ml-1">></span>
+          </div>
+          <ul class="flex flex-wrap justify-center gap-6 mb-0">
+            <li>
+              <a href="#skills" class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors">Skills</a>
+            </li>
+            <li>
+              <a href="#about" class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors">About</a>
+            </li>
+            <li>
+              <a href="#projects" class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors">Projects</a>
+            </li>
+            <li>
+              <a href="#contact" class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors">Contact</a>
+            </li>
+          </ul>
+          <div class="flex justify-center gap-4">
+            <a href="https://github.com/QuentinLiso" target="_blank" class="text-2xl text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/quentin-liso/" target="_blank" class="text-2xl text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+        <div class="text-center text-gray-600 dark:text-gray-400 text-sm">
+          <p>
+            &copy; 2025 Quentin LISO Portfolio. UI inspired by
+            <a href="https://www.youtube.com/watch?v=IMpYS8kDI4g&t=5378s" target="_blank" class="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">AsmrProg</a>
+          </p>
+        </div>
+      </div>
+    </footer>
 
-		<!-- Contact Section -->
-		<section id="contact" class="py-24 translate-y-4 transition-all duration-500 opacity-0">
-			<div class="container mx-auto px-4">
-				<h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Contact</h2>
-				<p class="text-xl text-gray-600 dark:text-gray-400 text-center mb-16">Interested in my profile? Let's work together!</p>
-				
-				<!-- Contact Info -->
-				<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-					
-					
-					<!-- Location -->
-					<div class="bg-white dark:bg-dark-background-secondary p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-						<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-							<i class="fa-solid fa-map-location-dot text-primary text-xl"></i>
-						</div>
-						<h3 class="text-xl font-bold mb-2">Location</h3>
-						<p class="text-lg text-gray-600 dark:text-gray-400">Rennes, Brittany</p>
-					</div>
-					
-					<!-- Email -->
-					<a href="mailto:quentin_liso@live.fr" class="bg-white dark:bg-dark-background-secondary p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-							<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-								<i class="fa-solid fa-envelope text-primary text-xl"></i>
-							</div>
-							<h3 class="text-xl font-bold mb-2">Email</h3>
-							<p class="text-lg text-gray-600 dark:text-gray-400">quentin_liso@live.fr</p>
-					</a>
-
-					<!-- Socials -->
-					<div class="bg-white dark:bg-dark-background-secondary p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-						<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-							<i class="fa-solid fa-globe text-primary text-xl"></i>
-						</div>
-						<h3 class="text-xl font-bold mb-2">Socials</h3>
-						<div class="flex justify-center space-x-4">
-							<a href="https://github.com/QuentinLiso" target="_blank" class="w-10 h-10 text-2xl bg-gray-100 dark:bg-dark-background-secondary rounded-full flex items-center justify-center text-gray-600 hover:text-primary dark:hover:text-primary dark:text-gray-400 transition-all duration-300">
-								<i class="fa-brands fa-github"></i>
-							</a>
-							<a href="https://www.linkedin.com/in/quentin-liso/" target="_blank" class="w-10 h-10 text-2xl bg-gray-100 dark:bg-dark-background-secondary rounded-full flex items-center justify-center text-gray-600 hover:text-primary dark:hover:text-primary dark:text-gray-400 transition-all duration-300">
-								<i class="fa-brands fa-linkedin"></i>
-							</a>
-						</div>
-					</div>
-				</div>
-
-
-			</div>
-		</section>
-
-		<!-- Footer -->
-		<footer class="bg-gray-50 dark:bg-dark-background-secondary py-12">
-			<div class="container mx-auto px-4">
-				<div class="flex flex-col md:flex-row justify-between items-center mb-8">
-					<div class="flex items-center mb-4 md:mb-0">
-						<span class="text-primary text-xl ml-1">$</span>
-						<a href="#hero" class="text-base font-extrabold ml-1">Quentin LISO</a>
-						<span class="text-primary text-xl ml-1">></span>
-					</div>
-					<ul class="flex flex-wrap justify-center gap-6 mb-0">
-						<li>
-							<a href="#skills" class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors">Skills</a>
-						</li>
-						<li>
-							<a href="#about" class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors">About</a>
-						</li>
-						<li>
-							<a href="#projects" class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors">Projects</a>
-						</li>
-						<li>
-							<a href="#contact" class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors">Contact</a>
-						</li>
-					</ul>
-					<div class="flex justify-center gap-4">
-						<a href="https://github.com/QuentinLiso" target="_blank" class="text-2xl text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors">
-							<i class="fa-brands fa-github"></i>
-						</a>
-						<a href="https://www.linkedin.com/in/quentin-liso/" target="_blank" class="text-2xl text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors">
-							<i class="fa-brands fa-linkedin"></i>
-						</a>
-						
-					</div>
-				</div>
-				<div class="text-center text-gray-600 dark:text-gray-400 text-sm">
-					<p>
-						&copy; 2025 Quentin LISO Portfolio. UI inspired by <a href="https://www.youtube.com/watch?v=IMpYS8kDI4g&t=5378s" target="_blank" class="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">AsmrProg</a>
-					</p>
-				</div>
-			</div>
-		</footer>
-
-		<script src="script.js"></script>
-</body>
-
-
+    <script src="script.js"></script>
+  </body>
 </html>
